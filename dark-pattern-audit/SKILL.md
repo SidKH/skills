@@ -1,13 +1,13 @@
 ---
 name: dark-pattern-audit
-description: Manual-only dark pattern audit for codebases and product copy. Use only when explicitly invoked as $dark-pattern-audit to inspect an entire repository, or user-selected paths, for evidence of deceptive design patterns that are inferable from local source code and text. Produce a structured narrative report with confidence, source locations, concise reasoning, and the official pattern link for each detected pattern.
+description: Audit codebases and product copy for deceptive dark patterns that are inferable from local source code and text. Produce a structured narrative report with confidence, source locations, concise reasoning, and the official pattern link for each detected pattern.
+disable-model-invocation: true
 ---
 
 # Dark Pattern Audit
 
 Audit a repository for dark patterns using only what is inferable from local source code and copy text. Do not rely on runtime inspection, screenshots, live browsing, telemetry, or external allegations.
-
-Use this skill only when explicitly invoked. Audit the entire repository by default unless the user narrows scope.
+Audit the entire repository by default unless the user narrows scope.
 
 ## Workflow
 
