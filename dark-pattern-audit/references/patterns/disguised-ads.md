@@ -1,6 +1,6 @@
 # Disguised Ads
 
-- Link: https://www.deceptive.design/types/disguised-ads
+- Link: [https://www.deceptive.design/types/disguised-ads](https://www.deceptive.design/types/disguised-ads)
 
 ## Definition
 

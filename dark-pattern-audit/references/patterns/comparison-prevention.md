@@ -1,6 +1,6 @@
 # Comparison Prevention
 
-- Link: https://www.deceptive.design/types/comparison-prevention
+- Link: [https://www.deceptive.design/types/comparison-prevention](https://www.deceptive.design/types/comparison-prevention)
 
 ## Definition
 

@@ -70,7 +70,6 @@ Repeat one section per detected pattern.
 - Use the exact pattern names from the catalog.
 - Point to source locations for every finding.
 - Do not include remediation advice unless the user asks for it later.
-- Do not include company names, case studies, or incident-specific details from public examples.
 - Do not claim intent, legality, or proven harm unless the repository itself establishes it.
 - Prefer exact strings, component names, flags, and control flow over vague claims.
 - If evidence is weak, downgrade confidence or omit the finding.

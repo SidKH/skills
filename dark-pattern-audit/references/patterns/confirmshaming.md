@@ -1,6 +1,6 @@
 # Confirmshaming
 
-- Link: https://www.deceptive.design/types/confirmshaming
+- Link: [https://www.deceptive.design/types/confirmshaming](https://www.deceptive.design/types/confirmshaming)
 
 ## Definition
 

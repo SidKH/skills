@@ -3,9 +3,9 @@
 Read this file first. Use it to identify candidate patterns, then open only the matching detailed files in `references/patterns/`.
 
 Each detailed file contains:
+
 - a neutral definition
 - practical audit cues for static code and copy review
-- a generic example with no company names
 - the official reference link
 
 ## Patterns
@@ -32,3 +32,4 @@ Each detailed file contains:
 - Report only `likely` or `possible` findings.
 - Use `insufficient evidence` internally and omit those sections from the final report.
 - Static code review can identify cues, copy, and logic, but cannot prove every runtime experience.
+
