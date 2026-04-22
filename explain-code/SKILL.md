@@ -29,6 +29,8 @@ Write 2-3 short sentences that give the gist to someone who did not write the co
 
 Optional: include one small `mermaid` block only when the main story is easier to grasp as flow or handoff.
 
+After the `📋 TLDR`, add a horizontal rule: `---`.
+
 ### `##` Sections
 
 For each section:
@@ -36,7 +38,8 @@ For each section:
 1. Write a plain-English `##` title with at least one emoji.
 2. Add a one- or two-sentence lead-in.
 3. Show one fenced code block.
-4. Optionally add one or two short sentences after the code.
+
+Separate body sections with a horizontal rule: `---`.
 
 ## Prose
 
@@ -51,7 +54,7 @@ For each section:
 - Default to about 10 non-blank lines or fewer.
 - Omit anything that does not help explain the current point.
 - Use `...`, `// ...`, placeholders, or simplified identifiers when that makes the idea easier to see.
-- Add short comments at the lines that carry the section's intent. Use them to tell the reader what this line is doing here and why it matters.
+- Every snippet should include short intent comments on the key lines. Use them to tell the reader what this line is doing here and why it matters.
 - Prefer behavior-faithful sketches over verbatim excerpts.
 
 ## Scope fallback
