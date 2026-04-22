@@ -6,86 +6,60 @@ disable-model-invocation: true
 
 # Explain Code
 
-Write a short, scannable explanation of the code the user scoped. Favor plain-English prose and small, high-signal code snippets. Explain the idea, not the whole file.
+Explain the user-scoped code as a short, scannable post. Prefer plain-English prose and small code sketches over exhaustive walkthroughs.
 
-## Core contract
+## Defaults
 
-These are the non-negotiable rules. If a later section seems to conflict, follow this section.
+- Match the user's scope exactly.
+- Use this structure: `#` title, `📋 TLDR`, then one or more `##` sections.
+- Each `##` section covers one idea and includes at least one fenced code block.
+- Keep prose simple and snippets small.
+- Simplify code when useful, but stay faithful to behavior.
+- Do not invent intent that the code or prompt does not support.
 
-- Match the user's scope. If they scoped a file, range, diff, or question, explain that and nothing broader.
-- Use this shape in order: `#` title, `📋 TLDR`, then one or more `##` sections.
-- Each `##` section covers one idea and must include at least one fenced code block.
-- Keep prose simple and short. One main idea per sentence.
-- Keep snippets small. Show the minimum code needed to support the section's point.
-- Be technically honest. Simplify or shorten code when it helps, but do not misrepresent behavior.
-- Do not invent intent that is not supported by the code or the prompt.
-
-## Output shape
+## Format
 
 ### `#` Title
 
-- One line.
-- Name the topic in plain terms.
+One plain-English line naming the topic.
 
 ### `📋 TLDR`
 
-- 2-3 short sentences.
-- State the gist for someone who did not write the code.
-- No `##` headings here.
-- No bullet list unless the user asked for bullets.
-- Optional: one small `mermaid` block only if the main story is easier to see as flow or handoff.
+Write 2-3 short sentences that give the gist to someone who did not write the code.
+
+Optional: include one small `mermaid` block only when the main story is easier to grasp as flow or handoff.
 
 ### `##` Sections
 
-Each section uses this shape:
+For each section:
 
-1. A plain-English `##` title with at least one emoji.
-2. A one- or two-sentence lead-in.
-3. A fenced code block.
-4. Optional: one or two short sentences after the code.
+1. Write a plain-English `##` title with at least one emoji.
+2. Add a one- or two-sentence lead-in.
+3. Show one fenced code block.
+4. Optionally add one or two short sentences after the code.
 
-Use several small sections instead of one large section. If you number section titles, keep the numbering style consistent across the whole answer.
+## Prose
 
-## Writing rules
-
-These rules apply to the `📋 TLDR`, section lead-ins, and any short text after code blocks.
-
+- One main idea per sentence.
 - Use short, common words where possible.
-- Put the simple story first, then details.
-- Avoid dense sentences that mix code names, behavior, and metaphor.
-- Avoid private shorthand or unexplained jargon.
-- Let headings and snippets do most of the work; keep surrounding prose light.
+- Start with the simple story, then add detail.
+- Avoid dense sentences, unexplained jargon, and private shorthand.
 
-## Snippet rules
+## Code
 
-Each code fence should work like a guided sketch, not a file dump.
+- Show only the code needed for the current section's point.
+- Default to about 10 non-blank lines or fewer.
+- Omit anything that does not help explain the current point.
+- Use `...`, `// ...`, placeholders, or simplified identifiers when that makes the idea easier to see.
+- Use comments as guide rails inside the snippet: move the reader's eye, name what matters, and connect the code back to the section's point.
+- Prefer behavior-faithful sketches over verbatim excerpts.
 
-- Default to about 10 non-blank lines or fewer. Single digits are often better.
-- Every line should support the current section's point.
-- Remove unrelated imports, branches, props, styling noise, and helper code.
-- Use `...`, `// ...`, renamed placeholders, or simplified identifiers when they make the idea easier to see.
-- Add sparse comments only where they direct the eye to the important shift or decision.
-- Do not repeat the lead-in sentence as a code comment.
+## Scope fallback
 
-If a point feels too small for its own snippet, merge it into a neighboring section rather than creating a prose-only section.
-
-## Simplification policy
-
-The prose explains the idea in human terms. The code proves that idea with the smallest honest example.
-
-- Prefer real names when they matter for orientation or the user asked for fidelity.
-- Prefer simplified names or pseudocode when verbatim code would add noise.
-- Verbatim excerpts are the exception, not the default.
-- Faithfulness to behavior matters more than copying exact source text.
-
-## Scope defaults
-
-- Explain the exact scope the user gave you.
-- If the user gave no scope and you can infer local context, default to the unstaged diff.
-- Skip empty sections instead of forcing a checklist.
+If the user gives no scope and local context makes it obvious, default to the unstaged diff.
 
 ## Guardrails
 
+- Do not create prose-only `##` sections.
 - Do not include long literals, secrets, or opaque blobs when a placeholder teaches the same point.
-- Do not use diagrams other than the optional `mermaid` block in the `📋 TLDR`.
-- Do not let the explanation turn into a line-by-line transcript unless the user explicitly asked for that.
+- Do not turn the answer into a line-by-line transcript unless the user asked for that.
