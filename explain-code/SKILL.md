@@ -39,6 +39,8 @@ For each section:
 2. Add a one- or two-sentence lead-in.
 3. Show one fenced code block.
 
+Stop the section after the code block.
+
 Separate body sections with a horizontal rule: `---`.
 
 ## Prose
@@ -54,7 +56,7 @@ Separate body sections with a horizontal rule: `---`.
 - Default to about 10 non-blank lines or fewer.
 - Omit anything that does not help explain the current point.
 - Use `...`, `// ...`, placeholders, or simplified identifiers when that makes the idea easier to see.
-- Every snippet should include short intent comments on the key lines. Use them to tell the reader what this line is doing here and why it matters.
+- Every snippet must include short intent comments on the key lines. Use them to tell the reader what this line is doing here and why it matters.
 - Prefer behavior-faithful sketches over verbatim excerpts.
 
 ## Scope fallback
@@ -64,5 +66,6 @@ If the user gives no scope and local context makes it obvious, default to the un
 ## Guardrails
 
 - Do not create prose-only `##` sections.
+- Do not add explanatory text after a section's code block.
 - Do not include long literals, secrets, or opaque blobs when a placeholder teaches the same point.
 - Do not turn the answer into a line-by-line transcript unless the user asked for that.
