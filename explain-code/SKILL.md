@@ -1,6 +1,6 @@
 ---
 name: explain-code
-description: Explain code as a scannable blog post—plain-language tldr, one emoji per ## title, one idea per section, snippets.
+description: Explain code as a scannable blog post
 disable-model-invocation: true
 ---
 
@@ -16,7 +16,7 @@ The reply has **three parts**, in order:
 |------|------|
 | **`#` Title** | One line: what this explanation is about. |
 | **TL;DR** | 2–4 short sentences: the gist for someone who did not write the code. **No** `##` here; no bullet list in the tldr unless the user asked for bullets. |
-| **One or more `##` sections** | Each section = one idea, a **`##` title that starts with one emoji** (see [Body sections](#body-sections)), and **always** at least one **fenced code** block. |
+| **One or more `##` sections** | Each section = one idea, a plain-English **`##` title** (see [Body sections](#body-sections)), and **always** at least one **fenced code** block. |
 
 Everything below explains *how* to write those three parts.
 
@@ -40,7 +40,7 @@ Everything below explains *how* to write those three parts.
 
 Each `##` is **one block** in a blog: title → short intro → code → optional short tail.
 
-1. **`##` title** — **Start with exactly one emoji**, then a space, then the words (plain English: what this part is *about*). The emoji is a small visual label for the eye—pick one that **fits the section**; do not stack several emojis in one title. If you use numbering, put the number first: `## 1. 🎬 The morph sequence` or the emoji first if you prefer: `## 🎬 1. The morph sequence`—**stay consistent** within one answer. Not a dump of symbols and file names unless the user wants that formality. Prefer **several small** sections over one long one. **Do not** put an emoji in the top-level `#` title; **do not** add emojis to the TL;DR block.
+1. **`##` title** — Plain English: what this part is *about*. Short and scannable; not a dump of symbols and file names unless the user wants that formality. If you use numbering, **stay consistent** within one answer (e.g. `## 1. The morph sequence` or `## The morph sequence` without numbers—pick one pattern and keep it). Prefer **several small** sections over one long one. **Do not** decorate the top-level `#` title or the TL;DR block with ornamental symbols.
 2. **Lead-in** — **One or two** simple sentences. Same [Plain language](#plain-language) rules as the tldr.
 3. **At least one fenced code block** — With **line comments** that mark what matters (*what* / *why* at the right lines). Do **not** let comments repeat the lead-in verbatim. You may use `...` or `// ...` when truncation is obvious.
 4. **After the code (optional)** — At most **one or two** short plain sentences. If this paragraph is as heavy as the code, shorten it.
