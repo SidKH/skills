@@ -15,7 +15,7 @@ The reply has **three parts**, in order:
 | Part | Role |
 |------|------|
 | **`#` Title** | One line: what this explanation is about. |
-| **📋 TLDR** | 2–3 short sentences: the gist for someone who did not write the code. **No** `##` here; no bullet list in the tldr unless the user asked for bullets. |
+| **📋 TLDR** | 2–3 short sentences: the gist for someone who did not write the code. **No** `##` here; no bullet list in the tldr unless the user asked for bullets. **Optional:** after those sentences, **one** small Mermaid diagram when the gist is mainly about order, branching, or dependencies (see bullets under **📋 TLDR** below). |
 | **One or more `##` sections** | Each section = one idea that can stand on its own, a plain-English **`##` title** with **at least one emoji** (see [Body sections](#body-sections)), and **always** at least one **fenced code** block. |
 
 Everything below explains *how* to write those three parts.
@@ -30,6 +30,7 @@ Everything below explains *how* to write those three parts.
 - **2–3 short sentences.**
 - **Plain language** — see [Plain language](#plain-language) (same bar as section lead-ins: one idea per sentence, no “gumbo”).
 - A teammate should get the point in **one read**.
+- **Optional Mermaid (at most one):** After the sentences, you may add **a single** small `mermaid` fenced diagram **only** when the core story is easier to see as a flow—e.g. pipeline steps, request/response hops, simple branching, or “who hands off to whom.” Keep it **compact** (few nodes and edges); **do not** use Mermaid when the sentences already suffice. **Do not** use ASCII art or other diagram styles in the tldr; prose-first, diagram as a rare aid. A tldr diagram is **not** a substitute for the body’s code snippets.
 
 **Same story, two densities** (favor the second):
 
@@ -40,7 +41,7 @@ Everything below explains *how* to write those three parts.
 
 Each `##` is **one block** in a blog: title → short intro → code → optional short tail. A reader should be able to jump into any single section and still follow it.
 
-1. **`##` title** — Plain English: what this part is *about*, **and include at least one emoji in every `##` title** (for example, `## 🔁 How the retry path works`). The emoji should fit the section’s topic; one per title is enough. Short and scannable; not a dump of symbols and file names unless the user wants that formality. If you use numbering, **stay consistent** within one answer (e.g. `## 1. 🔧 How the retry path works` or `## 🔧 How the retry path works` without numbers—pick one pattern and keep it). Prefer **several small** sections over one long one. **Do not** decorate the top-level `#` title or the **📋 TLDR** block with ornamental symbols—emojis are **only** for `##` body section titles.
+1. **`##` title** — Plain English: what this part is *about*, **and include at least one emoji in every `##` title** (for example, `## 🔁 How the retry path works`). The emoji should fit the section’s topic; one per title is enough. Short and scannable; not a dump of symbols and file names unless the user wants that formality. If you use numbering, **stay consistent** within one answer (e.g. `## 1. 🔧 How the retry path works` or `## 🔧 How the retry path works` without numbers—pick one pattern and keep it). Prefer **several small** sections over one long one. **Do not** decorate the top-level `#` title or the **📋 TLDR** prose with ornamental symbols—emojis are **only** for `##` body section titles. (An optional **substantive** Mermaid block in the tldr, per the **Optional Mermaid** bullet above, is allowed; it is not “decoration.”)
 2. **Lead-in** — **One or two** simple sentences. Same [Plain language](#plain-language) rules as the tldr. The reader should understand the point of the section **before** reading the code. Avoid symbol names unless they are needed for orientation.
 3. **At least one fenced code block** — With **line comments** that mark what matters (*what* / *why* at the right lines). Keep the real code and real symbol names, but make the comments easy to scan in plain English. Do **not** let comments repeat the lead-in verbatim. You may use `...` or `// ...` when truncation is obvious.
 4. **After the code (optional)** — At most **one or two** short plain sentences. Use this to restate the takeaway or connect the snippet back to the section title. Do not spend this space introducing a new implementation detail.
