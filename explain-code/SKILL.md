@@ -51,7 +51,7 @@ For each section:
 - Default to about 10 non-blank lines or fewer.
 - Omit anything that does not help explain the current point.
 - Use `...`, `// ...`, placeholders, or simplified identifiers when that makes the idea easier to see.
-- Use comments as guide rails inside the snippet: move the reader's eye, name what matters, and connect the code back to the section's point.
+- Add short comments at the lines that carry the section's intent. Use them to tell the reader what this line is doing here and why it matters.
 - Prefer behavior-faithful sketches over verbatim excerpts.
 
 ## Scope fallback
