@@ -61,7 +61,8 @@ Separate body sections with a horizontal rule: `---`.
 
 ## Scope fallback
 
-If the user gives no scope and local context makes it obvious, default to the unstaged diff.
+- If the user gives no scope and there are unstaged changes, default to the unstaged diff.
+- If the user gives no scope and there are no unstaged changes, do not guess what to explain; explicitly ask the user to identify the file, diff, or area they want explained.
 
 ## Guardrails
 
