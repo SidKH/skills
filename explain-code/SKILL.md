@@ -15,7 +15,7 @@ The reply has **three parts**, in order:
 | Part | Role |
 |------|------|
 | **`#` Title** | One line: what this explanation is about. |
-| **TL;DR** | 2–4 short sentences: the gist for someone who did not write the code. **No** `##` here; no bullet list in the tldr unless the user asked for bullets. |
+| **TL;DR** | 2–3 short sentences: the gist for someone who did not write the code. **No** `##` here; no bullet list in the tldr unless the user asked for bullets. |
 | **One or more `##` sections** | Each section = one idea, a plain-English **`##` title** (see [Body sections](#body-sections)), and **always** at least one **fenced code** block. |
 
 Everything below explains *how* to write those three parts.
@@ -23,11 +23,11 @@ Everything below explains *how* to write those three parts.
 ## Title
 
 - **One line.**
-- Names the topic in plain terms (not a long path dump unless the user’s question is about paths).
+- Names the topic in plain terms.
 
 ## TL;DR
 
-- **2–4 short sentences.**
+- **2–3 short sentences.**
 - **Plain language** — see [Plain language](#plain-language) (same bar as section lead-ins: one idea per sentence, no “gumbo”).
 - A teammate should get the point in **one read**.
 
@@ -78,5 +78,4 @@ Applies to the **tldr**, **lead-ins**, and **post-code** lines.
 ## Guardrails
 
 - **Do not invent intent** that is not supported by the code or the user’s prompt.
-- **Tone** — like a good technical post: direct and clear, not a tutorial essay and not a disconnected tweet thread. **No** jokey or meme voice.
-- **Engage** through clarity and pace, not jokes.
+- **Tone** — like a good technical post: direct and clear, not a tutorial essay and not a disconnected tweet thread.
