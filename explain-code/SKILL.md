@@ -15,7 +15,7 @@ The reply has **three parts**, in order:
 | Part | Role |
 |------|------|
 | **`#` Title** | One line: what this explanation is about. |
-| **TL;DR** | 2–3 short sentences: the gist for someone who did not write the code. **No** `##` here; no bullet list in the tldr unless the user asked for bullets. |
+| **📋 TLDR** | 2–3 short sentences: the gist for someone who did not write the code. **No** `##` here; no bullet list in the tldr unless the user asked for bullets. |
 | **One or more `##` sections** | Each section = one idea, a plain-English **`##` title** with **at least one emoji** (see [Body sections](#body-sections)), and **always** at least one **fenced code** block. |
 
 Everything below explains *how* to write those three parts.
@@ -25,7 +25,7 @@ Everything below explains *how* to write those three parts.
 - **One line.**
 - Names the topic in plain terms.
 
-## TL;DR
+## 📋 TLDR
 
 - **2–3 short sentences.**
 - **Plain language** — see [Plain language](#plain-language) (same bar as section lead-ins: one idea per sentence, no “gumbo”).
@@ -40,7 +40,7 @@ Everything below explains *how* to write those three parts.
 
 Each `##` is **one block** in a blog: title → short intro → code → optional short tail.
 
-1. **`##` title** — Plain English: what this part is *about*, **and include at least one emoji in every `##` title** (e.g. `## 🔁 The morph sequence`). The emoji should fit the section’s topic; one per title is enough. Short and scannable; not a dump of symbols and file names unless the user wants that formality. If you use numbering, **stay consistent** within one answer (e.g. `## 1. 🎬 The morph sequence` or `## 🎬 The morph sequence` without numbers—pick one pattern and keep it). Prefer **several small** sections over one long one. **Do not** decorate the top-level `#` title or the TL;DR block with ornamental symbols—emojis are **only** for `##` body section titles.
+1. **`##` title** — Plain English: what this part is *about*, **and include at least one emoji in every `##` title** (e.g. `## 🔁 The morph sequence`). The emoji should fit the section’s topic; one per title is enough. Short and scannable; not a dump of symbols and file names unless the user wants that formality. If you use numbering, **stay consistent** within one answer (e.g. `## 1. 🎬 The morph sequence` or `## 🎬 The morph sequence` without numbers—pick one pattern and keep it). Prefer **several small** sections over one long one. **Do not** decorate the top-level `#` title or the **📋 TLDR** block with ornamental symbols—emojis are **only** for `##` body section titles.
 2. **Lead-in** — **One or two** simple sentences. Same [Plain language](#plain-language) rules as the tldr.
 3. **At least one fenced code block** — With **line comments** that mark what matters (*what* / *why* at the right lines). Do **not** let comments repeat the lead-in verbatim. You may use `...` or `// ...` when truncation is obvious.
 4. **After the code (optional)** — At most **one or two** short plain sentences. If this paragraph is as heavy as the code, shorten it.
