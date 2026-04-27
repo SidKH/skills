@@ -1,0 +1,6 @@
+interface:
+  display_name: "Docs Quiz"
+  short_description: "Quiz from current technical docs"
+  default_prompt: "Use $docs-quiz. I will provide a technology and topic area. Read authoritative current docs, then quiz me with two short code snippets per round: one correct and one incorrect. Show only 1, the first snippet, 2, and the second snippet until I answer. After each answer, say Correct. or Incorrect. and explain why in under 240 characters, then continue with the next round."
+policy:
+  allow_implicit_invocation: false
