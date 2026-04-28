@@ -66,11 +66,11 @@ Progress: ✅ ✅ ❌
 
 ## Response Outcomes
 
-Treat `1`, `2`, `Option 1`, or `Option 2` as a choice. Classify every quiz response as a correct choice, wrong choice, or no-choice answer. Reply with the matching outcome below, include a link to the docs section that explains the concept using `[docs](link)`, show the progress display, then immediately continue with the next round in the same format.
+Treat `1`, `2`, `Option 1`, or `Option 2` as a choice. Classify every quiz response as a correct choice, wrong choice, or no-choice answer. Reply with the matching outcome below, show the progress display, then immediately continue with the next round in the same format.
 
 Only correct-choice explanations have a character limit. Other quiz-answer explanations should use enough normal prose to teach the deciding rule or docs concept.
 
-Place the docs link after the explanation and before the progress display.
+After the explanation and before the progress display, include a Markdown link with text `Docs` that points to the specific docs section explaining the concept.
 
 ### Correct Choice
 
