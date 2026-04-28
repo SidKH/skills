@@ -92,6 +92,7 @@ Explain the specific rule or docs concept in normal prose.
 
 ## Documentation Rules
 
-- Prefer official docs, API references, language specifications, or repository docs.
+- Use only official documentation sources: official docs, API references, language specifications, or official repository docs.
+- Do not use blogs, tutorials, Q&A sites, examples from third-party sites, AI summaries, or any other unofficial source.
 - For fast-moving technologies, verify current docs before generating questions.
-- If docs are unavailable, say so and use the best authoritative source you can find.
+- If official docs are unavailable, say so and do not generate quiz questions for that technology or topic.
