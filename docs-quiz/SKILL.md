@@ -53,7 +53,7 @@ For each round:
 
 After every quiz-answer explanation, show the quiz progress so far between two `---` lines with the label `Progress:` before the progress marks. Add a blank line before and after the closing `---` so Markdown does not parse the progress label as a heading.
 
-Use `✅` for each correct choice and `❌` for each wrong choice, separated by spaces. No-choice answers do not add a progress mark.
+Use `✅` for each correct choice and `❌` for each wrong choice or no-choice answer, separated by spaces.
 
 Example:
 
@@ -66,7 +66,11 @@ Progress: ✅ ✅ ❌
 
 ## Response Outcomes
 
-Treat `1`, `2`, `Option 1`, or `Option 2` as a choice. For correct choices, wrong choices, and no-choice answers, reply with the matching outcome below, show the progress display, then immediately continue with the next round in the same format.
+Treat `1`, `2`, `Option 1`, or `Option 2` as a choice. Classify every quiz response as a correct choice, wrong choice, or no-choice answer. Reply with the matching outcome below, include a link to the docs section that explains the concept using `[docs](link)`, show the progress display, then immediately continue with the next round in the same format.
+
+Only correct-choice explanations have a character limit. Other quiz-answer explanations should use enough normal prose to teach the deciding rule or docs concept.
+
+Place the docs link after the explanation and before the progress display.
 
 ### Correct Choice
 
@@ -82,21 +86,9 @@ Reply with `❌ Incorrect` on its own line, followed by a blank line, then expla
 
 ### No-Choice Answer
 
-Recognize when the user says they do not know, asks to learn, or gives an uncertain answer.
+Recognize when the user does not choose an option.
 
 Explain the specific rule or docs concept in normal prose.
-
-### Tangent Or Scope Change
-
-Recognize when the user asks a tangent, changes scope, or sends anything else that is not a quiz answer.
-
-Answer it normally, do not continue the quiz automatically, and end with: `To continue the quiz, send "continue".`
-
-### Resume
-
-Recognize `continue` after the quiz has stopped as a request to resume the quiz.
-
-Continue with the next round in the same format.
 
 ## Documentation Rules
 
