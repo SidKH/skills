@@ -1,6 +1,5 @@
 interface:
   display_name: "Dark Pattern Audit"
   short_description: "Manual audit for deceptive UX patterns"
-  default_prompt: "Use $dark-pattern-audit to audit this repository for dark patterns based only on the local codebase and copy text."
 policy:
   allow_implicit_invocation: false
